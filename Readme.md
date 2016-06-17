@@ -15,7 +15,7 @@ npm install gulp-pug-job
 
 This will wrap an already compiled Pug template file to a namespace on an object.
 
-Lets say you have a pug template, something like (e.g. filename is `example.js`):
+Lets say you have a pug template, something like (e.g. filename is `example.pug`):
 
 ```pug
 p Hello #{foo} welcome to #{baz}
@@ -42,7 +42,7 @@ gulp.task('job', function () {
     .pipe(gulp.dest('public/templates'));
 ```
 
-Then, in your HTML file, require the script using camel casing for the file name of the template (in our case it's simply `example`, but if the file was named `foo-baz.pug` you would use `fooBaz`):
+Then, in your HTML file, require the script using camel casing for the filename of the template (in our case it's simply `example`, but if the file was named `foo-baz.pug` you would use `fooBaz`):
 
 ```html
 <script src="https://raw.githubusercontent.com/pugjs/pug/1.11.0/runtime.js"></script>
@@ -113,7 +113,7 @@ The namespace to bind to
 
 **default:** _'-'_
 
-The file name separator. This will be used for converting file names to camel case object references.
+The filename separator. This will be used for converting filenames to camel case object references.
 
 i.e with the default settings the template file my-example.js would be accessible with:
 
