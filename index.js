@@ -67,7 +67,7 @@ job.prototype.wrap = function (file) {
   var methodName = this.camel(this.getFileName(file.relative));
   file.contents = Buffer.concat([
     this.pre(methodName),
-    new Buffer(wrap(file.contents).toString());
+    new Buffer(wrap(file.contents).toString()),
     this.post()
   ]);
 };

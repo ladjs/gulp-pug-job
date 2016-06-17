@@ -1,7 +1,7 @@
 {
   "name": "gulp-pug-job",
   "description": "Wrap compiled Pug templates using Gulp and pug-runtime/wrap and bind them to an object",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Nick Baugh <niftylettuce@gmail.com>",
   "bugs": {
     "url": "https://github.com/niftylettuce/gulp-pug-job/issues"
