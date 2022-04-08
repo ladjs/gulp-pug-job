@@ -10,7 +10,7 @@
     "gulp-util": "3.0.7",
     "pug-runtime": "^2.0.1",
     "through2": "2.0.1",
-    "underscore": "1.8.3"
+    "underscore": "1.13.2"
   },
   "homepage": "https://github.com/niftylettuce/gulp-pug-job",
   "keywords": [
